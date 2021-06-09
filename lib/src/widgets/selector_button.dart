@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/src/models/country_model.dart';
 import 'package:intl_phone_number_input/src/utils/selector_config.dart';
@@ -159,6 +161,8 @@ class SelectorButton extends StatelessWidget {
               initialChildSize: 1.0,
               builder: (BuildContext context, ScrollController controller) {
                 return Container(
+                  padding: EdgeInsets.only(
+                      top: max(MediaQuery.of(context).viewPadding.top, 25.0)),
                   decoration: ShapeDecoration(
                     color: Theme.of(context).canvasColor,
                     shape: RoundedRectangleBorder(
