@@ -85,7 +85,7 @@ class _CountrySearchListWidgetState extends State<CountrySearchListWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
